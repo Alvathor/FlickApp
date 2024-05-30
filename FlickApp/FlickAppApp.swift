@@ -11,7 +11,7 @@ import SwiftUI
 struct FlickAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListOfImagesView()
         }
     }
 }

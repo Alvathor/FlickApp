@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C0326CE62C07C92C008CC299 /* FlickAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326CE52C07C92C008CC299 /* FlickAppApp.swift */; };
-		C0326CE82C07C92C008CC299 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326CE72C07C92C008CC299 /* ContentView.swift */; };
+		C0326CE82C07C92C008CC299 /* ListOfImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326CE72C07C92C008CC299 /* ListOfImagesView.swift */; };
 		C0326CEA2C07C92E008CC299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0326CE92C07C92E008CC299 /* Assets.xcassets */; };
 		C0326CED2C07C92E008CC299 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0326CEC2C07C92E008CC299 /* Preview Assets.xcassets */; };
 		C0326CF72C07C92E008CC299 /* FlickAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326CF62C07C92E008CC299 /* FlickAppTests.swift */; };
 		C0326D012C07C92E008CC299 /* FlickAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D002C07C92E008CC299 /* FlickAppUITests.swift */; };
 		C0326D032C07C92E008CC299 /* FlickAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D022C07C92E008CC299 /* FlickAppUITestsLaunchTests.swift */; };
+		C0326D102C07C9EF008CC299 /* AsyncCachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D0F2C07C9EF008CC299 /* AsyncCachedImageView.swift */; };
+		C0326D122C07CABD008CC299 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D112C07CABD008CC299 /* ImageDetailView.swift */; };
+		C0326D142C07CAF8008CC299 /* PositionObservingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D132C07CAF8008CC299 /* PositionObservingView.swift */; };
+		C0326D162C07CFEA008CC299 /* FlickImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D152C07CFEA008CC299 /* FlickImage.swift */; };
+		C0326D182C08C469008CC299 /* ListOfImagesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D172C08C469008CC299 /* ListOfImagesViewModelTests.swift */; };
+		C0326D1A2C08D2DB008CC299 /* ListOfImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D192C08D2DB008CC299 /* ListOfImagesViewModel.swift */; };
+		C0326D1C2C08E8B8008CC299 /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D1B2C08E8B8008CC299 /* ImageDetailViewModel.swift */; };
+		C0326D1E2C08F39F008CC299 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D1D2C08F39F008CC299 /* Interactor.swift */; };
+		C0326D252C08FB47008CC299 /* ImageDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D242C08FB47008CC299 /* ImageDetailViewModelTests.swift */; };
+		C0326D282C08FE6C008CC299 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0326D272C08FE6C008CC299 /* Extensions+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		C0326CE22C07C92C008CC299 /* FlickApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0326CE52C07C92C008CC299 /* FlickAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickAppApp.swift; sourceTree = "<group>"; };
-		C0326CE72C07C92C008CC299 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0326CE72C07C92C008CC299 /* ListOfImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfImagesView.swift; sourceTree = "<group>"; };
 		C0326CE92C07C92E008CC299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0326CEC2C07C92E008CC299 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0326CF22C07C92E008CC299 /* FlickAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,16 @@
 		C0326CFC2C07C92E008CC299 /* FlickAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0326D002C07C92E008CC299 /* FlickAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickAppUITests.swift; sourceTree = "<group>"; };
 		C0326D022C07C92E008CC299 /* FlickAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0326D0F2C07C9EF008CC299 /* AsyncCachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImageView.swift; sourceTree = "<group>"; };
+		C0326D112C07CABD008CC299 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		C0326D132C07CAF8008CC299 /* PositionObservingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionObservingView.swift; sourceTree = "<group>"; };
+		C0326D152C07CFEA008CC299 /* FlickImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickImage.swift; sourceTree = "<group>"; };
+		C0326D172C08C469008CC299 /* ListOfImagesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfImagesViewModelTests.swift; sourceTree = "<group>"; };
+		C0326D192C08D2DB008CC299 /* ListOfImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfImagesViewModel.swift; sourceTree = "<group>"; };
+		C0326D1B2C08E8B8008CC299 /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
+		C0326D1D2C08F39F008CC299 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		C0326D242C08FB47008CC299 /* ImageDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModelTests.swift; sourceTree = "<group>"; };
+		C0326D272C08FE6C008CC299 /* Extensions+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +114,15 @@
 		C0326CE42C07C92C008CC299 /* FlickApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0326D262C08FE58008CC299 /* Extensions+Strings */,
 				C0326CE52C07C92C008CC299 /* FlickAppApp.swift */,
-				C0326CE72C07C92C008CC299 /* ContentView.swift */,
 				C0326CE92C07C92E008CC299 /* Assets.xcassets */,
+				C0326D222C08FB0D008CC299 /* Interactor */,
+				C0326D232C08FB1C008CC299 /* Model */,
 				C0326CEB2C07C92E008CC299 /* Preview Content */,
+				C0326D1F2C08F679008CC299 /* SharedView */,
+				C0326D202C08F68B008CC299 /* View */,
+				C0326D212C08F6ED008CC299 /* ViewModel */,
 			);
 			path = FlickApp;
 			sourceTree = "<group>";
@@ -114,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				C0326CF62C07C92E008CC299 /* FlickAppTests.swift */,
+				C0326D172C08C469008CC299 /* ListOfImagesViewModelTests.swift */,
+				C0326D242C08FB47008CC299 /* ImageDetailViewModelTests.swift */,
 			);
 			path = FlickAppTests;
 			sourceTree = "<group>";
@@ -125,6 +152,57 @@
 				C0326D022C07C92E008CC299 /* FlickAppUITestsLaunchTests.swift */,
 			);
 			path = FlickAppUITests;
+			sourceTree = "<group>";
+		};
+		C0326D1F2C08F679008CC299 /* SharedView */ = {
+			isa = PBXGroup;
+			children = (
+				C0326D132C07CAF8008CC299 /* PositionObservingView.swift */,
+				C0326D0F2C07C9EF008CC299 /* AsyncCachedImageView.swift */,
+			);
+			path = SharedView;
+			sourceTree = "<group>";
+		};
+		C0326D202C08F68B008CC299 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0326D112C07CABD008CC299 /* ImageDetailView.swift */,
+				C0326CE72C07C92C008CC299 /* ListOfImagesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0326D212C08F6ED008CC299 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0326D192C08D2DB008CC299 /* ListOfImagesViewModel.swift */,
+				C0326D1B2C08E8B8008CC299 /* ImageDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C0326D222C08FB0D008CC299 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C0326D1D2C08F39F008CC299 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C0326D232C08FB1C008CC299 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0326D152C07CFEA008CC299 /* FlickImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0326D262C08FE58008CC299 /* Extensions+Strings */ = {
+			isa = PBXGroup;
+			children = (
+				C0326D272C08FE6C008CC299 /* Extensions+String.swift */,
+			);
+			path = "Extensions+Strings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0326CE82C07C92C008CC299 /* ContentView.swift in Sources */,
+				C0326D1A2C08D2DB008CC299 /* ListOfImagesViewModel.swift in Sources */,
+				C0326D162C07CFEA008CC299 /* FlickImage.swift in Sources */,
+				C0326CE82C07C92C008CC299 /* ListOfImagesView.swift in Sources */,
+				C0326D1E2C08F39F008CC299 /* Interactor.swift in Sources */,
+				C0326D282C08FE6C008CC299 /* Extensions+String.swift in Sources */,
+				C0326D142C07CAF8008CC299 /* PositionObservingView.swift in Sources */,
 				C0326CE62C07C92C008CC299 /* FlickAppApp.swift in Sources */,
+				C0326D122C07CABD008CC299 /* ImageDetailView.swift in Sources */,
+				C0326D102C07C9EF008CC299 /* AsyncCachedImageView.swift in Sources */,
+				C0326D1C2C08E8B8008CC299 /* ImageDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +352,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0326D182C08C469008CC299 /* ListOfImagesViewModelTests.swift in Sources */,
 				C0326CF72C07C92E008CC299 /* FlickAppTests.swift in Sources */,
+				C0326D252C08FB47008CC299 /* ImageDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
