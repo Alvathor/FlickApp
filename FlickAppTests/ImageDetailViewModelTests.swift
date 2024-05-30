@@ -63,14 +63,8 @@ final class ImageDetailViewModelTests: XCTestCase {
 extension ImageDetailViewModelTests {
 
     func formateDate(with dateString: String) -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        let date = dateFormatter.date(from: dateString)!
-
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day, .hour], from: date)
-        let finalDate = calendar.date(from:components)
-        return finalDate ?? .now
+            let formatter = ISO8601DateFormatter()
+        return formatter.date(from: dateString) ?? .now
     }
 
     private func makeSampleImage() -> ListOfImagesViewModel.DataModel {

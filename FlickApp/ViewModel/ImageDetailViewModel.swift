@@ -37,26 +37,9 @@ class ImageDetailViewModel {
     }
 
     func formateDate(with dateString: String) -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        let date = dateFormatter.date(from: dateString)!
-        
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day, .hour], from: date)
-        let finalDate = calendar.date(from:components)
-        return finalDate ?? .now
+            let formatter = ISO8601DateFormatter()
+        return formatter.date(from: dateString) ?? .now
     }
-
-
-//    func formateDate(with dateString: String) -> Date {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-//        formatter.dateStyle = .medium
-////        formatter.timeZone = .current
-//        formatter.timeZone = TimeZone(secondsFromGMT: 0) // Ensure test consistency by setting time zone
-//
-//        return formatter.date(from: dateString) ?? Date()
-//    }
 
     func parseAuthor(with image: ImageDataModel) -> Author {
         let parts = image.author.components(separatedBy: " (\"")
